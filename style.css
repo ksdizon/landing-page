@@ -3,18 +3,26 @@
     padding: 0;
 }
 
-.container, .header, .hero, .information, .image-container, .item, .quote-container{
+/* Flex Containers */
+.container, .header, .hero, .information, .image-container, .item, .quote-container, .banner-container, .signup-banner{
     display: flex;
 }
 
+/* Column Flex Direction Containers */
 .container, .item {
     flex-direction: column;
 }
 
+/* Shared background colors */
 .header, .hero {
     background-color: #1F2937;
 }
 
+.information, .banner-container {
+    background-color: white;
+}
+
+/* Header Section */
 .header {
     align-items: center;
     justify-content: space-between;
@@ -93,7 +101,6 @@
 
 /* information */
 .information {
-    background-color: white;
     flex-direction: column;
     align-items: center;
     padding: 40px 50px 60px 50px;
@@ -146,4 +153,18 @@
     font-size: 24px;
     font-weight: bold;
     margin-left: auto;
+}
+
+/* Banner Section */
+.banner-container {
+    align-content: center;
+    justify-content: center;
+    padding: 100px 15%;
+}
+
+.signup-banner {
+    flex-grow: 1;
+    height: 200px;
+    background-color: #3882F6;
+    border-radius: 15px;
 }
