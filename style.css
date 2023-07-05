@@ -4,7 +4,7 @@
 }
 
 /* Flex Containers */
-.container, .header, .hero, .information, .image-container, .item, .quote-container, .banner-container, .signup-banner{
+.container, .header, .hero, .information, .image-container, .item, .quote-container, .banner-container, .signup-banner, .footer{
     display: flex;
 }
 
@@ -14,7 +14,7 @@
 }
 
 /* Shared background colors */
-.header, .hero {
+.header, .hero, .footer{
     background-color: #1F2937;
 }
 
@@ -22,14 +22,19 @@
     background-color: white;
 }
 
-/* Header Section */
-.header {
+/* Header & Footer Container */
+.header, .footer {
+    height: 50px;
     align-items: center;
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 15%;
     padding-right: 15%;
+}
+
+.footer {
+    justify-content: center;
 }
 
 #header-logo {
@@ -54,7 +59,7 @@
 
 /* Hero */
 .hero {
-    padding: 100px 15%;
+    padding: 50px 15%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -175,6 +180,6 @@
     padding: 0 10%;
 }
 
-.signup-banner p, h2{
+.signup-banner p, h2, .footer > p{
     color: white;
 }
