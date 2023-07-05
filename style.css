@@ -72,9 +72,6 @@
 
 .hero-left {
     flex: 1;
-}
-
-.hero-left {
     margin-right: 100px;
 }
 
@@ -88,15 +85,22 @@
 .hero-left > p {
     font-size: 18px;
     color: #E5E7EB;
+    padding-bottom: 1%;
 }
 
-.hero-left > button {
-    width: 90px;
-    height: 40px;
+/* Buttons */
+.hero-left > button, .signup-banner > button{
+    width: 150px;
+    height: 45px;
     color: white;
     background-color: #3882F6;
-    border-radius: 10%;
+    border-radius: 3px;
     border: 0px;
+    cursor: pointer;
+}
+
+.signup-banner > button {
+    border: 2px solid white;
 }
 
 /* information */
@@ -113,7 +117,6 @@
 }
 
 .image-container {
-    display: flex;
     justify-content: center;
     padding: 10px;
 }
@@ -132,6 +135,7 @@
 }
 
 .item > p {
+    font-family: "Roboto";
     width: 210px;
     text-align: center;
 }
@@ -157,14 +161,20 @@
 
 /* Banner Section */
 .banner-container {
-    align-content: center;
     justify-content: center;
     padding: 100px 15%;
 }
 
 .signup-banner {
+    align-items: center;
+    justify-content: space-evenly;
     flex-grow: 1;
     height: 200px;
     background-color: #3882F6;
     border-radius: 15px;
+    padding: 0 10%;
+}
+
+.signup-banner p, h2{
+    color: white;
 }
